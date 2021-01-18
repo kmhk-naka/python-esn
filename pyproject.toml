@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-esn"
+version = "0.1.0"
+description = ""
+authors = ["kmhk-naka <phytran35@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.19.5"
+matplotlib = "^3.3.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+autopep8 = "^1.5.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
