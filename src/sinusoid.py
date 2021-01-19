@@ -46,10 +46,11 @@ ax1.set_title('Prediction')
 
 # Plot prediction (enlarged)
 ax2 = fig.add_subplot(212)
-zoom_length = 200
-index = np.arange(train_length, train_length + zoom_length)
-ax2.plot(index, data[train_length: train_length + zoom_length], label='input data')
-ax2.plot(index, predict_result[:zoom_length, 0], label='predict result')
+enlarge_length = 200
+enlarge_tmax = train_length + enlarge_length
+index = np.arange(train_length, enlarge_tmax)
+ax2.plot(index, data[train_length:enlarge_tmax], label='input data')
+ax2.plot(index, predict_result[train_length:enlarge_tmax, 0], label='predict result')
 ax2.legend(bbox_to_anchor=bbox_to_anchor, loc=bbox_loc, borderaxespad=0)
 ax1.set_ylim(-1.1, 1.1)
 ax2.set_title('Prediction (enlarged)')
