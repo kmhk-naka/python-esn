@@ -60,4 +60,4 @@ class EchoStateNetwork:
         for t in range(self.test_length):
             self.one_step(test_data[t], t + self.train_length)
 
-        return self.y[self.train_length:-1]
+        return self.y
