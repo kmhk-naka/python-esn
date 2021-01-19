@@ -50,6 +50,8 @@ index = np.arange(train_length, tmax)
 ax1.plot(index, data[train_length:-1], label='input data')
 ax1.plot(index, predict_result[train_length:-1, 0], label='predict result')
 ax1.legend(bbox_to_anchor=bbox_to_anchor, loc=bbox_loc, borderaxespad=0)
+ax1.set_xlabel(r'$n$')
+ax1.set_ylabel(r'$y_n$')
 ax1.set_title('Prediction')
 
 # Plot prediction (enlarged)
@@ -60,6 +62,8 @@ index = np.arange(train_length, enlarge_tmax)
 ax2.plot(index, data[train_length:enlarge_tmax], label='input data')
 ax2.plot(index, predict_result[train_length:enlarge_tmax, 0], label='predict result')
 ax2.legend(bbox_to_anchor=bbox_to_anchor, loc=bbox_loc, borderaxespad=0)
+ax2.set_xlabel(r'$n$')
+ax2.set_ylabel(r'$y_n$')
 ax2.set_title('Prediction (enlarged)')
 
 fig.subplots_adjust(right=0.8, hspace=0.5)
@@ -71,11 +75,15 @@ plt.clf()
 # Plot prediction feature
 ax1 = fig.add_subplot(211)
 ax1.scatter(predict_result[:-1, 0], predict_result[1:, 0])
+ax1.set_xlabel(r'$y_n$')
+ax1.set_ylabel(r'$y_{n+1}$')
 ax1.set_title('Prediction')
 
 # Plot Logistic feature
 ax2 = fig.add_subplot(212)
 ax2.scatter(data[train_length:-1, 0], data[train_length + 1:, 0])
+ax2.set_xlabel(r'$y_n$')
+ax2.set_ylabel(r'$y_{n+1}$')
 ax2.set_title('Logistic')
 
 fig.subplots_adjust(right=0.8, hspace=0.5)
