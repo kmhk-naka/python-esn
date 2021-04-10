@@ -11,8 +11,8 @@
 ![sinusoid](https://raw.githubusercontent.com/kmhk-naka/python-esn/master/images/sinusoid.png)
 
 # ロジスティック写像
-`train_length = 1_000_000`で実行したときの結果．ただし，訓練ロジックの関係で，100万回で実行するとCPUが悲鳴をあげることがあるので注意．
+`train_length = 200_000`で実行したときの結果．
 
-![logistic 2000000](https://raw.githubusercontent.com/kmhk-naka/python-esn/master/images/logistic.png)
+![logistic 200000](https://raw.githubusercontent.com/kmhk-naka/python-esn/master/images/logistic.png)
 
-![logistic feature 2000000](https://raw.githubusercontent.com/kmhk-naka/python-esn/master/images/logistic-feature.png)
+![logistic feature 200000](https://raw.githubusercontent.com/kmhk-naka/python-esn/master/images/logistic-feature.png)

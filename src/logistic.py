@@ -14,7 +14,7 @@ image_path = Path('./images').resolve()
 image_path.mkdir(mode=0o775, parents=True, exist_ok=True)
 
 init_length = 1000
-train_length = 1_000_000
+train_length = 200_000
 test_length = 1000
 tmax = train_length + test_length
 
